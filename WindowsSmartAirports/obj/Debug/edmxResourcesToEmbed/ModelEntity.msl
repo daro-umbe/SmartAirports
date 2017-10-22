@@ -1,0 +1,46 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Mapping Space="C-S" xmlns="http://schemas.microsoft.com/ado/2009/11/mapping/cs">
+  <EntityContainerMapping StorageEntityContainer="geartestModelStoreContainer" CdmEntityContainer="geartestEntities">
+    <EntitySetMapping Name="Flights">
+      <EntityTypeMapping TypeName="geartestModel.Flights">
+        <MappingFragment StoreEntitySet="Flights">
+          <ScalarProperty Name="id" ColumnName="id" />
+          <ScalarProperty Name="name" ColumnName="name" />
+          <ScalarProperty Name="source" ColumnName="source" />
+          <ScalarProperty Name="destination" ColumnName="destination" />
+          <ScalarProperty Name="time" ColumnName="time" />
+          <ScalarProperty Name="gate" ColumnName="gate" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="PassengersInflights">
+      <EntityTypeMapping TypeName="geartestModel.PassengersInflights">
+        <MappingFragment StoreEntitySet="PassengersInflights">
+          <ScalarProperty Name="id" ColumnName="id" />
+          <ScalarProperty Name="pass_id" ColumnName="pass_id" />
+          <ScalarProperty Name="flight_id" ColumnName="flight_id" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="Payments">
+      <EntityTypeMapping TypeName="geartestModel.Payments">
+        <MappingFragment StoreEntitySet="Payments">
+          <ScalarProperty Name="id" ColumnName="id" />
+          <ScalarProperty Name="shop" ColumnName="shop" />
+          <ScalarProperty Name="id_pass" ColumnName="id_pass" />
+          <ScalarProperty Name="value" ColumnName="value" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="Persons">
+      <EntityTypeMapping TypeName="geartestModel.Persons">
+        <MappingFragment StoreEntitySet="Persons">
+          <ScalarProperty Name="id" ColumnName="id" />
+          <ScalarProperty Name="name" ColumnName="name" />
+          <ScalarProperty Name="login" ColumnName="login" />
+          <ScalarProperty Name="pass" ColumnName="pass" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+  </EntityContainerMapping>
+</Mapping>

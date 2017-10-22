@@ -1,0 +1,96 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Schema Namespace="geartestModel.Store" Provider="System.Data.SqlClient" ProviderManifestToken="2012" Alias="Self" xmlns:store="http://schemas.microsoft.com/ado/2007/12/edm/EntityStoreSchemaGenerator" xmlns:customannotation="http://schemas.microsoft.com/ado/2013/11/edm/customannotation" xmlns="http://schemas.microsoft.com/ado/2009/11/edm/ssdl">
+  <!--Errors Found During Generation:
+warning 6002: The table/view 'geartest.dbo.Flights' does not have a primary key defined. The key has been inferred and the definition was created as a read-only table/view.-->
+  <EntityType Name="Flights">
+    <Key>
+      <PropertyRef Name="id" />
+      <PropertyRef Name="name" />
+      <PropertyRef Name="source" />
+      <PropertyRef Name="destination" />
+      <PropertyRef Name="time" />
+      <PropertyRef Name="gate" />
+    </Key>
+    <Property Name="id" Type="int" StoreGeneratedPattern="Identity" Nullable="false" />
+    <Property Name="name" Type="varchar" MaxLength="50" Nullable="false" />
+    <Property Name="source" Type="varchar" MaxLength="50" Nullable="false" />
+    <Property Name="destination" Type="varchar" MaxLength="50" Nullable="false" />
+    <Property Name="time" Type="datetime" Nullable="false" />
+    <Property Name="gate" Type="varchar" MaxLength="30" Nullable="false" />
+  </EntityType>
+  <!--Errors Found During Generation:
+warning 6002: The table/view 'geartest.dbo.PassengersInflights' does not have a primary key defined. The key has been inferred and the definition was created as a read-only table/view.-->
+  <EntityType Name="PassengersInflights">
+    <Key>
+      <PropertyRef Name="id" />
+      <PropertyRef Name="pass_id" />
+      <PropertyRef Name="flight_id" />
+    </Key>
+    <Property Name="id" Type="int" StoreGeneratedPattern="Identity" Nullable="false" />
+    <Property Name="pass_id" Type="varchar" MaxLength="50" Nullable="false" />
+    <Property Name="flight_id" Type="varchar" MaxLength="50" Nullable="false" />
+  </EntityType>
+  <!--Errors Found During Generation:
+warning 6002: The table/view 'geartest.dbo.Payments' does not have a primary key defined. The key has been inferred and the definition was created as a read-only table/view.-->
+  <EntityType Name="Payments">
+    <Key>
+      <PropertyRef Name="id" />
+      <PropertyRef Name="shop" />
+      <PropertyRef Name="id_pass" />
+      <PropertyRef Name="value" />
+    </Key>
+    <Property Name="id" Type="int" StoreGeneratedPattern="Identity" Nullable="false" />
+    <Property Name="shop" Type="varchar" MaxLength="50" Nullable="false" />
+    <Property Name="id_pass" Type="int" Nullable="false" />
+    <Property Name="value" Type="int" Nullable="false" />
+  </EntityType>
+  <!--Errors Found During Generation:
+warning 6002: The table/view 'geartest.dbo.Persons' does not have a primary key defined. The key has been inferred and the definition was created as a read-only table/view.-->
+  <EntityType Name="Persons">
+    <Key>
+      <PropertyRef Name="id" />
+      <PropertyRef Name="name" />
+      <PropertyRef Name="login" />
+      <PropertyRef Name="pass" />
+    </Key>
+    <Property Name="id" Type="int" StoreGeneratedPattern="Identity" Nullable="false" />
+    <Property Name="name" Type="varchar" MaxLength="50" Nullable="false" />
+    <Property Name="login" Type="varchar" MaxLength="50" Nullable="false" />
+    <Property Name="pass" Type="varchar" MaxLength="50" Nullable="false" />
+  </EntityType>
+  <EntityContainer Name="geartestModelStoreContainer">
+    <EntitySet Name="Flights" EntityType="Self.Flights" store:Type="Tables" store:Schema="dbo">
+      <DefiningQuery>SELECT 
+    [Flights].[id] AS [id], 
+    [Flights].[name] AS [name], 
+    [Flights].[source] AS [source], 
+    [Flights].[destination] AS [destination], 
+    [Flights].[time] AS [time], 
+    [Flights].[gate] AS [gate]
+    FROM [dbo].[Flights] AS [Flights]</DefiningQuery>
+    </EntitySet>
+    <EntitySet Name="PassengersInflights" EntityType="Self.PassengersInflights" store:Type="Tables" store:Schema="dbo">
+      <DefiningQuery>SELECT 
+    [PassengersInflights].[id] AS [id], 
+    [PassengersInflights].[pass_id] AS [pass_id], 
+    [PassengersInflights].[flight_id] AS [flight_id]
+    FROM [dbo].[PassengersInflights] AS [PassengersInflights]</DefiningQuery>
+    </EntitySet>
+    <EntitySet Name="Payments" EntityType="Self.Payments" store:Type="Tables" store:Schema="dbo">
+      <DefiningQuery>SELECT 
+    [Payments].[id] AS [id], 
+    [Payments].[shop] AS [shop], 
+    [Payments].[id_pass] AS [id_pass], 
+    [Payments].[value] AS [value]
+    FROM [dbo].[Payments] AS [Payments]</DefiningQuery>
+    </EntitySet>
+    <EntitySet Name="Persons" EntityType="Self.Persons" store:Type="Tables" store:Schema="dbo">
+      <DefiningQuery>SELECT 
+    [Persons].[id] AS [id], 
+    [Persons].[name] AS [name], 
+    [Persons].[login] AS [login], 
+    [Persons].[pass] AS [pass]
+    FROM [dbo].[Persons] AS [Persons]</DefiningQuery>
+    </EntitySet>
+  </EntityContainer>
+</Schema>

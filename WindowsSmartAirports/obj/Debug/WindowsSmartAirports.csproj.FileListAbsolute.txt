@@ -1,0 +1,14 @@
+C:\Users\Jaroslav\source\repos\AndroidSmartAirports\WindowsSmartAirports\bin\Debug\WindowsSmartAirports.exe.config
+C:\Users\Jaroslav\source\repos\AndroidSmartAirports\WindowsSmartAirports\bin\Debug\WindowsSmartAirports.exe
+C:\Users\Jaroslav\source\repos\AndroidSmartAirports\WindowsSmartAirports\bin\Debug\WindowsSmartAirports.pdb
+C:\Users\Jaroslav\source\repos\AndroidSmartAirports\WindowsSmartAirports\obj\Debug\WindowsSmartAirports.csprojResolveAssemblyReference.cache
+C:\Users\Jaroslav\source\repos\AndroidSmartAirports\WindowsSmartAirports\obj\Debug\WindowsSmartAirports.Form1.resources
+C:\Users\Jaroslav\source\repos\AndroidSmartAirports\WindowsSmartAirports\obj\Debug\WindowsSmartAirports.Properties.Resources.resources
+C:\Users\Jaroslav\source\repos\AndroidSmartAirports\WindowsSmartAirports\obj\Debug\WindowsSmartAirports.csproj.GenerateResource.Cache
+C:\Users\Jaroslav\source\repos\AndroidSmartAirports\WindowsSmartAirports\obj\Debug\WindowsSmartAirports.csproj.CoreCompileInputs.cache
+C:\Users\Jaroslav\source\repos\AndroidSmartAirports\WindowsSmartAirports\obj\Debug\WindowsSmartAirports.exe
+C:\Users\Jaroslav\source\repos\AndroidSmartAirports\WindowsSmartAirports\obj\Debug\WindowsSmartAirports.pdb
+C:\Users\Jaroslav\source\repos\AndroidSmartAirports\WindowsSmartAirports\bin\Debug\EntityFramework.dll
+C:\Users\Jaroslav\source\repos\AndroidSmartAirports\WindowsSmartAirports\bin\Debug\EntityFramework.SqlServer.dll
+C:\Users\Jaroslav\source\repos\AndroidSmartAirports\WindowsSmartAirports\bin\Debug\EntityFramework.xml
+C:\Users\Jaroslav\source\repos\AndroidSmartAirports\WindowsSmartAirports\bin\Debug\EntityFramework.SqlServer.xml
